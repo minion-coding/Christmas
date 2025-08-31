@@ -22,4 +22,9 @@
 
 body {
   font-family: var(--font-body-font);
+  color: var(--color-text-color);
+}
+
+a {
+  @apply cursor-pointer;
 }
