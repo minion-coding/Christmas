@@ -34,4 +34,37 @@ const givings = [
         desc: "Give away feelings that last forever."
     },
 ]
-export { navbarLists, services, supports, givings };
+
+const gifts = [
+    {
+        id: "4564121657412354",
+        imageUrl: "./src/assets/gift1.png",
+        title: "Gingerbread",
+        price: 15
+    },
+    {
+        id: "4564121657412355",
+        imageUrl: "./src/assets/gift2.png",
+        title: "Santa Claus Hat",
+        price: 22
+    },
+    {
+        id: "4564121657412356",
+        imageUrl: "./src/assets/gift3.png",
+        title: "Christmas Tree",
+        price: 48
+    },
+    {
+        id: "4564121657412357",
+        imageUrl: "./src/assets/gift4.png",
+        title: "Snowman",
+        price: 35
+    },
+    {
+        id: "4564121657412358",
+        imageUrl: "./src/assets/gift5.png",
+        title: "Candy Stick",
+        price: 12
+    },
+]
+export { navbarLists, services, supports, givings, gifts };

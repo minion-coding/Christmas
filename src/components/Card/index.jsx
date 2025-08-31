@@ -22,7 +22,7 @@ function Card({ data }) {
   return (
     <div className="flex flex-col items-center" ref={card}>
       <CardImage url={data.imageUrl} />
-      <h3 className="text-base font-bold text-title-color">{data.title}</h3>
+      <h3 className="text-base font-bold text-title-color">${data.title}</h3>
       <p className="text-sm font-light">{data.desc}</p>
     </div>
   );

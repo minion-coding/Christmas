@@ -3,10 +3,11 @@ import Footer from "./layout/Footer";
 import Hero from "./views/Hero";
 import Giving from "./views/Giving";
 import Celebrate from "./views/Celebrate";
+import GiftSection from "./views/GiftSection";
 
 import "./App.css";
 
-import { givings } from "./vdatas/VDatas";
+import { givings, gifts } from "./vdatas/VDatas";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Hero></Hero>
       <Giving data={givings} />
       <Celebrate />
+      <GiftSection data={gifts} />
       <Footer></Footer>
     </>
   );

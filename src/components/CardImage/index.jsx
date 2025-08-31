@@ -1,8 +1,10 @@
-function CardImage({ url }) {
+function CardImage({ url, size }) {
   return (
     <img
       src={url}
-      className="w-25 transition-transform duration-300 hover:-translate-y-2"
+      className={`w-${
+        size ? size : 25
+      } justify-self-center transition-transform duration-300 hover:-translate-y-2`}
     />
   );
 }
