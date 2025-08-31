@@ -1,6 +1,6 @@
-import Logo from "../Logo";
-import Avatar from "../Avatar";
-import Navbar from "../Navbar";
+import Logo from "../../components/Logo";
+import Avatar from "../../components/Avatar";
+import Navbar from "./Navbar";
 
 function Header() {
   return (

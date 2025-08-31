@@ -13,8 +13,10 @@
     "@fontsource/poppins": "^5.2.6",
     "@tailwindcss/vite": "^4.1.12",
     "daisyui": "^5.0.54",
+    "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "remixicon": "^4.6.0",
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {

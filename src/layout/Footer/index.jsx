@@ -1,14 +1,51 @@
 //import base
-import { useState } from "react";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 // import external component
-import List from "../List";
-import Logo from "../Logo";
+import List from "./List";
+import Logo from "../../components/Logo";
 
 // import virtual data
 import { supports, services } from "../../vdatas/VDatas";
 
 function Footer() {
+  const footerLeftImg = useRef(null);
+  const footerRightImg = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      footerLeftImg.current,
+      {
+        opacity: 0,
+        y: -100,
+        rotate: -50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        rotate: 0,
+        duration: 0.5,
+        ease: "power1.inOut",
+      }
+    );
+    gsap.fromTo(
+      footerRightImg.current,
+      {
+        opacity: 0,
+        y: -100,
+        rotate: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        rotate: 0,
+        duration: 0.5,
+        ease: "power1.inOut",
+      }
+    );
+  }, []);
+
   return (
     <footer className="my-10">
       <div className="relative flex container justify-between items-start">
@@ -36,8 +73,16 @@ function Footer() {
             />
           </a>
         </List>
-        <img src="./src/assets/footer1.png" className="absolute w-30 top-25 left-0"/>
-        <img src="./src/assets/footer2.png" className="absolute w-30 top-30 right-0"/>
+        <img
+          ref={footerLeftImg}
+          src="./src/assets/footer1.png"
+          className="absolute w-30 top-25 left-0"
+        />
+        <img
+          ref={footerRightImg}
+          src="./src/assets/footer2.png"
+          className="absolute w-30 top-30 right-0"
+        />
       </div>
       <p className="mt-25 mb-5 text-center w-full text-sm">
         ©minion-coding. All rights reserved

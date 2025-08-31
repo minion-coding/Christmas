@@ -13,4 +13,25 @@ const supports = [
     { url: "/support", title: "Support Center" },
     { url: "/contactUs", title: "Contact Us" },
 ]
-export { navbarLists, services, supports };
+
+const givings = [
+    {
+        id: "092345789132401",
+        imageUrl: "./src/assets/giving1.png",
+        title: "Surprise gifts",
+        desc: "They are the best gifts there is."
+    },
+    {
+        id: "092345789132402",
+        imageUrl: "./src/assets/giving2.png",
+        title: "Ornaments",
+        desc: "Give a moment to decorate."
+    },
+    {
+        id: "092345789132403",
+        imageUrl: "./src/assets/giving3.png",
+        title: "Lots of love",
+        desc: "Give away feelings that last forever."
+    },
+]
+export { navbarLists, services, supports, givings };

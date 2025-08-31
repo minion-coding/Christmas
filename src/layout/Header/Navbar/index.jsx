@@ -1,5 +1,5 @@
 import NavItem from "./NavItem";
-import { navbarLists } from "../../vdatas/VDatas";
+import { navbarLists } from "../../../vdatas/VDatas";
 
 import { useState } from "react";
 
