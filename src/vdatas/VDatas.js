@@ -67,4 +67,40 @@ const gifts = [
         price: 12
     },
 ]
-export { navbarLists, services, supports, givings, gifts };
+
+const urlArray = [
+    "./src/assets/gift1.png",
+    "./src/assets/gift2.png",
+    "./src/assets/gift3.png",
+    "./src/assets/gift4.png"
+]
+
+const properties = [
+    {
+        id: 456484125135,
+        title: "name",
+        desc: "reindeer"
+    },
+    {
+        id: 4564841251332,
+        title: "name",
+        desc: "reindeer"
+    },
+    {
+        id: 45648412513345,
+        title: "name",
+        desc: "reindeer"
+    },
+    {
+        id: 4564841251356,
+        title: "name",
+        desc: "reindeer"
+    },
+    {
+        id: 4564841251398,
+        title: "name",
+        desc: "reindeer"
+    },
+]
+
+export { navbarLists, services, supports, givings, gifts, urlArray, properties };
