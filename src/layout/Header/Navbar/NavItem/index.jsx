@@ -2,7 +2,7 @@ function NavItem({ caption, isActive, handleClick }) {
   return (
     <li>
       <a
-        href={`#${caption}`}
+        href={`#${caption.toLowerCase()}`}
         className={
           isActive
             ? "text-base font-medium text-first-color"

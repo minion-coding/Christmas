@@ -36,7 +36,7 @@ function Celebrate() {
   }, []);
 
   return (
-    <section className="my-15" id="home">
+    <section className="my-15" id="celebrate">
       <div className="container flex flex-col items-center md:gap-5 sm:flex-row">
         <div className="text-center w-3/5 sm:text-start" ref={right}>
           <h2 className="text-title-color text-xl font-semibold mb-5 sm:text-2xl">

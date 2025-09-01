@@ -47,7 +47,7 @@ function Footer() {
   }, []);
 
   return (
-    <footer className="my-10">
+    <footer className="my-10" id="footer">
       <div className="relative flex container justify-between items-start">
         <div>
           <Logo title={"Christmas"}></Logo>
