@@ -37,7 +37,7 @@ function SlideShowGallery({ urlArray }) {
         </a>
         <a className="absolute top-1/2 right-2">
           <RiArrowRightBoxLine
-            size={20}
+            size={24}
             color="red"
             onClick={() =>
               index + 1 >= length ? setIndex(length - 1) : setIndex(index + 1)
